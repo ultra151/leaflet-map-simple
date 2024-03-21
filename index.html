@@ -34,7 +34,7 @@
 
   /* display basemap tiles -- see others at https://leaflet-extras.github.io/leaflet-providers/preview/ */
   L.tileLayer(
-    'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
       attribution: '&copy; <a href="https://osm.org/copyright">\
         OpenStreetMap</a> contributors, &copy;\
         <a href="https://carto.com/attribution">CARTO</a>'
@@ -42,7 +42,14 @@
 
   /* Display a point marker with pop-up text */
   L.marker([35.02, 126.79]).addTo(map) // EDIT marker coordinates
-  .bindPopup("Insert pop-up text here"); // EDIT pop-up text message
+  .bindPopup("My House"); // EDIT pop-up text message
+
+     L.marker([35.08, 126.71]).addTo(map) // EDIT marker coordinates
+  .bindPopup("노안면"); // EDIT pop-up text message
+
+  L.marker([35.03, 126.80]).addTo(map) // EDIT marker coordinates
+  .bindPopup("노안면"); // EDIT pop-up text message
+   
 
   </script>
 </body>
